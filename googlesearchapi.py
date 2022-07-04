@@ -226,7 +226,7 @@ for t in range(0, len(templeslistsck)):
         mlm = len(m)
         li = ("{}{}".format('length - - - - - - - - - ', mlm))
         logs.append(li)
-        mlmcolumns = [mlm == 2, mlm == 3, mlm == 4]
+        mlmcolumns = [mlm == 3, mlm == 4]
         if any(mlmcolumns):
             s1 = soup1.find_all("span", class_="BNeawe")
             logs.append(s1)
@@ -242,8 +242,6 @@ for t in range(0, len(templeslistsck)):
                     tl = [ x.strip() for x in ''.join(tl).strip('[]').split(',') ]
                     li = ("{}{}".format('tl ------', tl))
                     logs.append(li)
-                    if (mlm == 2):
-                        kl = -2
                     if (mlm == 3):
                         kl = -2
                     if (mlm == 4):
