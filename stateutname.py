@@ -52,7 +52,7 @@ def removen(string):
         clean_string = clean_string.rstrip()
         clean_string = clean_string.strip(m)
         clean_string = re.sub(m,' ', clean_string)
-        clean_string = [re.sub(r"[^a-zA-Z,]+",'', clean_string)]
+        clean_string = [re.sub(r"[^a-zA-Z,-]+",'', clean_string)]
         mymano = ''
         for x in clean_string:
             mymano += ' '+ x
