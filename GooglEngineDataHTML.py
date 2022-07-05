@@ -77,9 +77,10 @@ for cc in range(0,csco):
     statename = re.sub(patternspace, '-', sul[cc])
     capital = re.sub(patternspace, '-', cap[cc])
 
-templefilepushtxt = ("{}{}".format(statename,"templewebfile.txt"))
+templefilepushtxt = ("{}{}{}".format(statename,'_',"templewebfile.txt"))
 
 templefilegiventxt = ("{}{}{}".format(googledataindiastutdir,N,templefilepushtxt))
+
 
 #df = pd.read_csv(inputfile, delimiter=',', encoding='encoding')
 
@@ -140,19 +141,22 @@ def capitalize_sp(text):
 
 ttc = []
 
-for tl in (templeslist):
-   
-    temple = re.sub(r"[^a-zA-Z]+",' ', tl[0])
+for l in range(0,len(templeslist)):
+  
+    temple = re.sub(r"[^a-zA-Z]+",' ', str(templeslist[l][0]))
     temple = capitalize_sp(temple)
-    location = re.sub(r"[^a-zA-Z]+",' ', tl[1])
+    location = re.sub(r"[^a-zA-Z]+",' ', str(templeslist[l][1]))
     location = capitalize_sp(location)
     mano = ("{}{}{}{}{}".format("<h3>", temple, ',', location, "</h3>"))
     ttc.append(mano)
 
-for tl in (ttc):
-    tmol.append(tl)
+for o in (ttc):
+  
+    tmol.append(o)
+
 
 tmol = " ".join(str(elem) for elem in tmol).strip()
+
 
 with open(templefilegiventxt, 'w') as tfile:
     tfile.write(tmol)
