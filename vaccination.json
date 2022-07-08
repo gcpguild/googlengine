@@ -1,0 +1,384 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "mark": {
+    "type": "bar"
+  },
+  "encoding": {
+    "x": {
+      "field": "*",
+      "type": "quantitative",
+      "aggregate": "count",
+      "scale": {
+        "type": "linear",
+        "zero": true
+      }
+    },
+    "y": {
+      "field": "*",
+      "type": "quantitative",
+      "aggregate": "count",
+      "scale": {
+        "type": "linear",
+        "zero": true
+      }
+    },
+    "color": {
+      "field": "Vaccines",
+      "type": "nominal",
+      "scale": {
+        "type": "linear",
+        "zero": true
+      }
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "Vaccines": "Anhui ZL - Zifivax,AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,RIBSP - QazVac,SRCVB - EpiVacCorona"
+      },
+      {
+        "Vaccines": "Anhui ZL - Zifivax,Beijing CNBG - BBIBP-CorV,CanSino - Convidecia,IMB - Covidful,Pfizer BioNTech - Comirnaty,Shenzhen - LV-SMENP-DC,Sinovac - CoronaVac,Wuhan CNBG - Inactivated"
+      },
+      {
+        "Vaccines": "Anhui ZL - Zifivax,Gamaleya - Gam-Covid-Vac,Gamaleya - Sputnik-Light,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - AZD1222"
+      },
+      {
+        "Vaccines": "AstraZeneca - AZD1222, Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "AstraZeneca - AZD1222, Pfizer BioNTech - Comirnaty, Sinovac - CoronaVac, Gamaleya - Sputnik V"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Bharat - Covaxin,CanSino - Convidecia,Finlay - Soberana-02,Gamaleya - Gam-Covid-Vac,Gamaleya - Sputnik-Light,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,Shifa - COVIran Barakat,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Bharat - Covaxin,CanSino - Convidecia,Gamaleya - Gam-Covid-Vac,Gamaleya - Sputnik-Light,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Bharat - Covaxin,CanSino - Convidecia,Gamaleya - Gam-Covid-Vac,Gamaleya - Sputnik-Light,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Bharat - Covaxin,Gamaleya - Gam-Covid-Vac,Gamaleya - Sputnik-Light,Janssen - Ad26.COV 2-S,Julphar - Hayat-Vax,Moderna - Spikevax,Novavax-NUVAXOVID,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Bharat - Covaxin,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Bharat - Covaxin,Gamaleya - Gam-Covid-Vac,Julphar - Hayat-Vax,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,CIGB - CIGB-66,Gamaleya - Gam-Covid-Vac,Moderna - Spikevax,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,CanSino - Convidecia,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,CanSino - Convidecia,Gamaleya - Gam-Covid-Vac,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Gamaleya - Sputnik-Light,Janssen - Ad26.COV 2-S,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Gamaleya - Sputnik-Light,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac,Wuhan CNBG - Inactivated"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Moderna - Spikevax,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,RIBSP - QazVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac,Wuhan CNBG - Inactivated"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Janssen - Ad26.COV 2-S"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Novavax-NUVAXOVID,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Janssen - Ad26.COV 2-S,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Janssen - Ad26.COV 2-S,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Moderna - Spikevax,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Beijing CNBG - BBIBP-CorV,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,CIGB - CIGB-66,Finlay - Soberana Plus,Finlay - Soberana-02,Gamaleya - Gam-Covid-Vac,Gamaleya - Sputnik-Light,Janssen - Ad26.COV 2-S,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,CanSino - Convidecia,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,CanSino - Convidecia,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,CanSino - Convidecia,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Gamaleya - Gam-Covid-Vac,Gamaleya - Sputnik-Light,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Gamaleya - Gam-Covid-Vac,Gamaleya - Sputnik-Light,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Novavax-NUVAXOVID,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Gamaleya - Gam-Covid-Vac,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Gamaleya - Gam-Covid-Vac,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Gamaleya - Gam-Covid-Vac,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Janssen - Ad26.COV 2-S"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Novavax-NUVAXOVID,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Janssen - Ad26.COV 2-S,Novavax-NUVAXOVID,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Janssen - Ad26.COV 2-S,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Janssen - Ad26.COV 2-S,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Moderna - Spikevax,Novavax-NUVAXOVID,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Moderna - Spikevax,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Moderna - Spikevax,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,Pfizer BioNTech - Comirnaty,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,SII - Covishield"
+      },
+      {
+        "Vaccines": "AstraZeneca - Vaxzevria,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Bharat - Covaxin,Gamaleya - Gam-Covid-Vac,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Bharat - Covaxin,Janssen - Ad26.COV 2-S,SII - Covishield"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Bharat - Covaxin,SII - Covishield"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,CIGB - CIGB-66,Finlay - Soberana-02,Gamaleya - Gam-Covid-Vac,Gamaleya - Sputnik-Light,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Chumakov - Covi-Vac,Gamaleya - Gam-Covid-Vac,Gamaleya - Sputnik-Light"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Julphar - Hayat-Vax,SII - Covishield"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Moderna - Spikevax,SII - Covishield"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,Pfizer BioNTech - Comirnaty,RIBSP - QazVac,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Gamaleya - Gam-Covid-Vac,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Janssen - Ad26.COV 2-S,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Janssen - Ad26.COV 2-S,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Janssen - Ad26.COV 2-S,SII - Covishield"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,SII - Covishield"
+      },
+      {
+        "Vaccines": "Beijing CNBG - BBIBP-CorV,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "Bharat - Covaxin,Biological E - Corbevax,Gamaleya - Gam-Covid-Vac,Janssen - Ad26.COV 2-S,Moderna - Spikevax,SII - Covishield,SII - Covovax,Zydus - ZyCov-D"
+      },
+      {
+        "Vaccines": "Bharat - Covaxin,Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "Bharat - Covaxin,SII - Covishield"
+      },
+      {
+        "Vaccines": "CIGB - CIGB-66,Finlay - Soberana Plus,Finlay - Soberana-02"
+      },
+      {
+        "Vaccines": "Gamaleya - Gam-Covid-Vac,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "Gamaleya - Gam-Covid-Vac,SII - Covishield"
+      },
+      {
+        "Vaccines": "Janssen - Ad26.COV 2-S,Moderna - Spikevax"
+      },
+      {
+        "Vaccines": "Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "Janssen - Ad26.COV 2-S,Moderna - Spikevax,Pfizer BioNTech - Comirnaty,SII - Covishield,Sinovac - CoronaVac"
+      },
+      {
+        "Vaccines": "Janssen - Ad26.COV 2-S,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "Janssen - Ad26.COV 2-S,Pfizer BioNTech - Comirnaty,SII - Covishield"
+      },
+      {
+        "Vaccines": "Janssen - Ad26.COV 2-S,SII - Covishield"
+      },
+      {
+        "Vaccines": "Moderna - Spikevax"
+      },
+      {
+        "Vaccines": "Moderna - Spikevax,Novavax-NUVAXOVID,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "Moderna - Spikevax,Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "Moderna - mRNA-1273"
+      },
+      {
+        "Vaccines": "Moderna - mRNA-1273, AstraZeneca - AZD1222, Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "Moderna - mRNA-1273, Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "Pfizer BioNTech - Comirnaty"
+      },
+      {
+        "Vaccines": "Pfizer BioNTech - Comirnaty, Sinovac - CoronaVac, Turkovac"
+      },
+      {
+        "Vaccines": "SII - Covishield"
+      },
+      {
+        "Vaccines": "SRCVB - EpiVacCorona, Gamaleya - Sputnik V"
+      },
+      {
+        "Vaccines": null
+      }
+    ]
+  },
+  "config": {
+    "background": "#ffffff",
+    "padding": 20
+  }
+}
