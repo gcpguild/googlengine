@@ -63,11 +63,11 @@ Nature Labs : Google Engine @ SerApi, LLC.
 
 Download from Git Hub
 
-https://github.com/NATURE-LABS/temples/blob/main/serpapijsongetlocal.py
+https://github.com/gcpguild/googlengine/blob/main/parseserpapijsonvaccination.py
 
 How to use
 ------------
-python parseserpapijson.py
+python parseserpapijsonvaccination.py
 
 Contact 
 --------
